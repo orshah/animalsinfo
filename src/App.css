@@ -2,8 +2,24 @@
   display: flex;
   gap: 1rem;
   justify-content: center;
+  padding-top: 7rem;
 }
 
 h1 {
   text-align: center;
+  color: azure;
+  font-size: 10rem;
+}
+h2 {
+  text-align: center;
+  color: azure;
+  font-weight: bolder;
+
+  font-size: 3rem;
+}
+
+p {
+  color: azure;
+  padding-top: 5rem;
+  font-size: 40px;
 }
