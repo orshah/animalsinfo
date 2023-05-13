@@ -1,7 +1,9 @@
 import "./animalsInfo.style.css";
 
-const AnimalsInfo = ({ type, source }) => {
-  return <img className={type} src={source} alt=""></img>;
+const AnimalsInfo = ({ type, source, onClickHandler }) => {
+  return (
+    <img className={type} src={source} alt="" onClick={onClickHandler}></img>
+  );
 };
 
 export default AnimalsInfo;
