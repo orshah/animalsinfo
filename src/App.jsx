@@ -8,37 +8,37 @@ import React, { useState } from "react";
 import "./App.css";
 
 function App() {
-  const [showBearInfo, setShowBearInfo] = useState(false);
-  const [showElephantInfo, setShowElephantInfo] = useState(false);
-  const [showRhinosInfo, setShowRhinosInfo] = useState(false);
-  const [showZebrasInfo, setShowZebrasInfo] = useState(false);
+  const [showBearInfo, setShowBearInfo] = useState(0);
+  const [showElephantInfo, setShowElephantInfo] = useState(0);
+  const [showRhinosInfo, setShowRhinosInfo] = useState(0);
+  const [showZebrasInfo, setShowZebrasInfo] = useState(0);
 
   const clickBear = () => {
-    setShowBearInfo(true);
-    setShowElephantInfo(false);
-    setShowRhinosInfo(false);
-    setShowZebrasInfo(false);
+    setShowBearInfo(1);
+    setShowElephantInfo(0);
+    setShowRhinosInfo(0);
+    setShowZebrasInfo(0);
   };
 
   const clickElephant = () => {
-    setShowBearInfo(false);
-    setShowElephantInfo(true);
-    setShowRhinosInfo(false);
-    setShowZebrasInfo(false);
+    setShowBearInfo(0);
+    setShowElephantInfo(1);
+    setShowRhinosInfo(0);
+    setShowZebrasInfo(0);
   };
 
   const clickRhinos = () => {
-    setShowBearInfo(false);
-    setShowElephantInfo(false);
-    setShowRhinosInfo(true);
-    setShowZebrasInfo(false);
+    setShowBearInfo(0);
+    setShowElephantInfo(0);
+    setShowRhinosInfo(1);
+    setShowZebrasInfo(0);
   };
 
   const clickZebras = () => {
-    setShowBearInfo(false);
-    setShowElephantInfo(false);
-    setShowRhinosInfo(false);
-    setShowZebrasInfo(true);
+    setShowBearInfo(0);
+    setShowElephantInfo(0);
+    setShowRhinosInfo(0);
+    setShowZebrasInfo(1);
   };
 
   return (
